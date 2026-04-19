@@ -1,0 +1,10 @@
+# netlify.toml – Netlify deployment config for the frontend
+# Put this file in the /frontend directory
+
+[build]
+  publish = "."       # serve from the same folder
+
+[[redirects]]
+  from   = "/*"
+  to     = "/index.html"
+  status = 200
